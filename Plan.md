@@ -55,6 +55,12 @@ Plan
 
     http://replication.io
 
+* Changes
+
+    les données commandent l'action
+    
+    les patterns que j'ai essayé (et qui marchent plus ou moins bien)
+
 * ...
 
 Travail en mode déconnecté avec PouchDB
