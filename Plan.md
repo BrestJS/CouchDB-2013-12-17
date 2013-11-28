@@ -49,6 +49,8 @@ Plan
 
     créer ses propres fonctions reduce (EXAMPLE NEEDED)
 
+    wrapping it up: couchapps
+
 * Replication
 
     consistance éventuelle: 409, conflict (NEED RESEARCH)
