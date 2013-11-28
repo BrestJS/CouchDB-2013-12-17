@@ -5,7 +5,8 @@ Plan
 
   méthodes .. REST
   en-têtes
--> RESTClient
+
+  -> RESTClient
 
 * JSON
 
@@ -13,9 +14,9 @@ Plan
 
 * Futon
 
-    champs attendus: _id, _rev
+    champs attendus: `_id`, `_rev`
 
-    conventions: type (->"tables" SQL)
+    conventions: `type` (->"tables" SQL)
 
 * Un peu d'admin
 
@@ -33,9 +34,11 @@ Plan
 
     créer les documents avec curl
 
-    créer les documents avec le navigateur et PouchDB('localhost:5984')
+    créer les documents avec le navigateur et PouchDB('localhost:5984'), avec le navigateur + supercouch
 
-    créer les documents avec Node.js + PouchDB('localhost:5984') + supercouch
+    créer les documents avec Node.js + PouchDB('localhost:5984'), avec Node.js + supercouch
+
+    DELETE vs _deleted:true
 
 * Utiliser les vues
 
@@ -49,6 +52,8 @@ Plan
 
     créer ses propres fonctions reduce (EXAMPLE NEEDED)
 
+    filters
+
     wrapping it up: couchapps
 
 * Replication
@@ -57,10 +62,12 @@ Plan
 
     http://replication.io
 
+    filtered replication
+
 * Changes
 
     les données commandent l'action
-    
+
     les patterns que j'ai essayé (et qui marchent plus ou moins bien)
 
 * ...
