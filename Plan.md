@@ -21,6 +21,7 @@ Plan
 * Un peu d'admin
 
     Party Mode vs admins
+    (probably skip permissions and users for now)
 
     SSL: stunnel
 
