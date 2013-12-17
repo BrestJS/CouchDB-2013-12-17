@@ -15,7 +15,7 @@ Plan
 * Futon
 
     * champs attendus: `_id`, `_rev`
-    * conventions: `type` (->"tables" SQL)
+    * conventions: `type` (comparer avec "tables" SQL)
 
 * Un peu d'admin
 
@@ -24,43 +24,46 @@ Plan
 
     * SSL: stunnel
 
-* Créer un gestionnaire de tâches
+* Créer (un gestionnaire de tâches)
 
-    * conventions, conventions! -- title, description, priority, due, cost, completed
+    * conventions, conventions! -- `title`, `description`, `priority`, `due`, `cost`, `completed`
     * créer les documents avec Futon en mode `Fields`, en mode `Source` (montrer comment Futon envoie les commandes)
     * créer les documents avec RESTClient
     * créer les documents avec curl
-    * créer les documents avec le navigateur et PouchDB('localhost:5984'), avec le navigateur + supercouch
-    * créer les documents avec Node.js + PouchDB('localhost:5984'), avec Node.js + supercouch
-    * DELETE vs _deleted:true
+    * créer les documents avec le navigateur et `PouchDB('localhost:5984')`, avec le navigateur + supercouch
+    * créer les documents avec Node.js + `PouchDB('localhost:5984')`, avec Node.js + supercouch
+    * `DELETE` vs `_deleted:true`
 
-* Utiliser les vues
+    * clefs externes vs deep documents
 
-    * créer une vue: émettre une clef, émettre des champs calculés
-    * la sauvegarder; _design documents
+* Utiliser les vues et les filtres
+
+    * créer une vue: émettre une clef, émettre des champs calculés (map)
+    * la sauvegarder; `_design` documents
     * observer l'ordre de tri; le rôle des clefs composées
-    * utilisation avec _count, _sum
-    * créer ses propres fonctions reduce (EXAMPLE NEEDED)
-    * filters
-    * intro rapide sur les transformations (par exemple utiliser markdown pour faire une transformation de notes)
+    * utilisation avec `_count`, `_sum`, `_stats` (reduce)
+    * créer ses propres fonctions reduce (function(keys,values,rereduce))
+    * filters (function(doc,req))
+    * (intro rapide sur les transformations (par exemple utiliser markdown pour faire une transformation de notes))
     * wrapping it up: couchapps
-
-* Replication
-
-    * consistance éventuelle: 409, conflict (NEED RESEARCH)
-    * http://replication.io
-    * filtered replication
 
 * Changes
 
     * les données commandent l'action
     * les patterns que j'ai essayé (et qui marchent plus ou moins bien)
 
-* ...
+* Replication
 
-Travail en mode déconnecté avec PouchDB
+    * replication comme copie de bdd
+    * replication comme copie `live`
+    * la sauvegarder: `_replications`
+    * consistance éventuelle: 409, conflict (NEED RESEARCH)
+    * http://replication.io
+    * filtered replication (`filter=`, `req.query[field]`, )
 
-Un mot sur Hoodie
+Travail en mode déconnecté avec PouchDB (`PouchDB('mydb')`).
+
+Un mot sur Hoodie.
 
 Le concept d'origine
 --------------------
