@@ -1,0 +1,23 @@
+{
+  "name": "CouchDB-2013-12-17",
+  "version": "0.0.0",
+  "authors": [
+    "Stephane Alnet <stephane@shimaore.net>"
+  ],
+  "license": "unlicense",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "supercouch": "https://github.com/qualiancy/supercouch.git#~0.2.4",
+    "superagent": "https://github.com/visionmedia/superagent.git#~0.15.7",
+    "pouchdb": "https://github.com/daleharvey/pouchdb.git#~1.0.0",
+    "jquery": "~2.0.3",
+    "teacup": "https://github.com/goodeggs/teacup.git"
+  }
+}
